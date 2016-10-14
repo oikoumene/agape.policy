@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>
+    <layer name="agape.policy"
+        interface="agape.policy.interfaces.IProductSpecific" />
+</layers>
