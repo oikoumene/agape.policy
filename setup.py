@@ -33,7 +33,9 @@ setup(name='agape.policy',
           'collective.dexteritytextindexer',
           'plone.app.multilingual',
           'plone.multilingualbehavior',
-          'agape.theme',
+          'gaf.theme',
+          'Products.ContentWellPortlets',
+          
           # -*- Extra requirements: -*-
       ],
       extras_require={
