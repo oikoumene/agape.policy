@@ -35,6 +35,7 @@ setup(name='agape.policy',
           'plone.multilingualbehavior',
           'gaf.theme',
           'Products.ContentWellPortlets',
+          'quintagroup.dropdownmenu',
           
           # -*- Extra requirements: -*-
       ],
