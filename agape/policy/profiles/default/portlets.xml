@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<portlets>
+    <portlet 
+        addview="agape.policy.portlet.BannerPortlet"
+        title="Banner portlet"
+        description=""/>
+</portlets>
