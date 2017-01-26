@@ -33,7 +33,7 @@ setup(name='agape.policy',
           'collective.dexteritytextindexer',
           'plone.app.multilingual',
           'plone.multilingualbehavior',
-          'gaf.theme',
+          #'gaf.theme',
           'Products.ContentWellPortlets',
           'quintagroup.dropdownmenu',
           
