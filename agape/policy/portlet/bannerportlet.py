@@ -60,8 +60,10 @@ class Renderer(base.Renderer):
             parent_folder = aq_parent(aq_inner(self.context))
             parent_path = '/'.join(parent_folder.getPhysicalPath())
             
+            if len(self.context.getPhysicalPath()) in [4,5]:
+                return True
             
-            if self.is_default_page(parent_folder, self.context):
+            elif self.is_default_page(parent_folder, self.context):
                 path1 = aq_parent(aq_inner(self.context)).getPhysicalPath()
                 if (len(path1)) in [4,5]:
                     return True
