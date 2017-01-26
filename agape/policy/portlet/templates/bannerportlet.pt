@@ -3,8 +3,9 @@
     
     <div tal:condition="view/filter_portlet">
         <div tal:content="structure view/banner_txt"></div>
-        <img tal:attributes="src view/banner_img" alt=""/>
+        <span tal:content="view/banner_img"/>
         
     </div>
+    
     
 </dl>
