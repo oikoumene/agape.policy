@@ -45,19 +45,27 @@ class Assignment(base.Assignment):
 class Renderer(base.Renderer):
     render = ViewPageTemplateFile('templates/bannerportlet.pt')
     
+    def is_default_page(self, parent, curr_content):
+        view = getMultiAdapter((parent, self.request), name='default_page')
+        return view.isDefaultPage(curr_content)
+    
     def filter_portlet(self):
         portlet_key = self.__portlet_metadata__['key']
         context = self.context
+        
         
         if portlet_key == '/'.join(self.context.getPhysicalPath()):
             return True
         else:
             parent_folder = aq_parent(aq_inner(self.context))
             parent_path = '/'.join(parent_folder.getPhysicalPath())
-            view = getMultiAdapter((parent_folder, self.request), name='default_page')
             
-            if portlet_key == parent_path:
-                return True
+            
+            if self.is_default_page(parent_folder, self.context):
+                path1 = aq_parent(aq_inner(self.context)).getPhysicalPath()
+                if (len(path1)) in [4,5]:
+                    return True
+            
         return False
     
     def banner_txt(self):
