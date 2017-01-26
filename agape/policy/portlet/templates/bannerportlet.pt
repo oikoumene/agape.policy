@@ -1,9 +1,9 @@
-<dl class="portlet"
+<dl class="banner-portlet"
     i18n:domain="agape.policy">
     
     <div tal:condition="view/filter_portlet">
-        <div tal:content="structure view/banner_txt"></div>
-        <span tal:content="view/banner_img"/>
+        <div id="banner_txt_id" tal:content="structure view/banner_txt"></div>
+        <span id="banner_img_id" tal:content="view/banner_img"/>
         
     </div>
     
