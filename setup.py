@@ -36,6 +36,7 @@ setup(name='agape.policy',
           #'gaf.theme',
           'Products.ContentWellPortlets',
           'quintagroup.dropdownmenu',
+          'Products.PloneFormGen',
           
           # -*- Extra requirements: -*-
       ],
