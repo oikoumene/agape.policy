@@ -37,6 +37,7 @@ setup(name='agape.policy',
           'Products.ContentWellPortlets',
           'quintagroup.dropdownmenu',
           'Products.PloneFormGen',
+          'occc.theme',
           
           # -*- Extra requirements: -*-
       ],
