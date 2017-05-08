@@ -38,6 +38,7 @@ setup(name='agape.policy',
           'quintagroup.dropdownmenu',
           'Products.PloneFormGen',
           'occc.theme',
+          'collective.portlet.embed',
           
           # -*- Extra requirements: -*-
       ],
